@@ -1,0 +1,413 @@
+{
+	"info": {
+		"_postman_id": "78520107-7ea4-4214-9d60-ea384e643bab",
+		"name": "TallerExpress",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42899478"
+	},
+	"item": [
+		{
+			"name": "GET/tienda/todas",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/tienda/todas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tienda",
+						"todas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET/tienda/name/nameQuery",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/tienda/nombre/Supermercado La 14",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tienda",
+						"nombre",
+						"Supermercado La 14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET/tienda/direccion/direccionQuery",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/tienda/direccion/Calle 123 #45-67, Bogotá",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tienda",
+						"direccion",
+						"Calle 123 "
+					],
+					"hash": "45-67, Bogotá"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST/tienda/createAny",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"tienda De One\",\n    \"direccion\": \"Carrera 26AN #4-44, Popayan\",\n    \"telefono\": 3135718358\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/tienda/createOne",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tienda",
+						"createOne"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST/tienda/createAny",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"nombre\": \"Tienda De One\",\n    \"direccion\": \"Carrera 26AN #4-44, Popayán\",\n    \"telefono\": 3135718358\n  },\n  {\n    \"nombre\": \"Tienda El Mercado\",\n    \"direccion\": \"Calle 12 #8-55, Cali\",\n    \"telefono\": 3124567890\n  },\n  {\n    \"nombre\": \"Supermercado Los Andes\",\n    \"direccion\": \"Avenida Santander #10-20, Medellín\",\n    \"telefono\": 3109876543\n  }\n]\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/tienda/createAny",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tienda",
+						"createAny"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET/producto/todos",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/producto/todos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"producto",
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET/producto/tipo/Electrónica",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/producto/tipo/Electrónica",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"producto",
+						"tipo",
+						"Electrónica"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET/producto/nombre/Laptop Pro 15",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/producto/nombre/Laptop Pro 15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"producto",
+						"nombre",
+						"Laptop Pro 15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST/producto/createOne",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/producto/createOne",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"producto",
+						"createOne"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST/producto/createAny",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n       {\n        \"nombre\": \"colchoneta de yoga\",\n        \"marca\": \"ZenFit\",\n        \"tipo\": \"Deportes\",\n        \"precio\": 1890\n    },\n    {\n        \"nombre\": \"bicicleta spinning pro\",\n        \"marca\": \"CycleMax\",\n        \"tipo\": \"Deportes\",\n        \"precio\": 12500\n    },\n    {\n        \"nombre\": \"cuerda de saltar profesional\",\n        \"marca\": \"JumpMaster\",\n        \"tipo\": \"Deportes\",\n        \"precio\": 720\n    }\n]\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/producto/createAny",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"producto",
+						"createAny"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET/empleado/todos",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/empleado/todos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"empleado",
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET/empleado/cargo/Jefe de Ventas",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/empleado/cargo/Jefe de Ventas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"empleado",
+						"cargo",
+						"Jefe de Ventas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET/empleado/nombre/María Gómez",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/empleado/nombre/María Gómez",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"empleado",
+						"nombre",
+						"María Gómez"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST/empleado/createOne",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/empleado/createOne",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"empleado",
+						"createOne"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST/empleado/createAny",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"nombre\": \"Camila Torres\",\n        \"cargo\": \"Analista de Datos\",\n        \"salario\": 5800000\n    },\n    {\n        \"nombre\": \"Andrés Gómez\",\n        \"cargo\": \"Desarrollador Backend\",\n        \"salario\": 6200000\n    },\n    {\n        \"nombre\": \"Valentina Salazar\",\n        \"cargo\": \"Gerente de Proyectos\",\n        \"salario\": 9500000\n    }\n]\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/empleado/createAny",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"empleado",
+						"createAny"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
