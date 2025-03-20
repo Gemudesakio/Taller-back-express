@@ -1,4 +1,3 @@
-import { response } from 'express'
 import Empleado from '../../models/Empleado.js'
 
 //agregar un solo objeto
